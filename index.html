@@ -186,9 +186,13 @@
         var arealatlons = [[35.70548713151763, 139.4825613711614], [35.705391604264, 139.48290308828055], [35.70515506009571, 139.48279665180084], [35.70525058763278, 139.4824493327617]];
         var kominkan = L.polygon(arealatlons, { color: 'green', weight: 2, fill: true, fillColor: 'green', opacity: 0.5 });
 
+        var arealatlons = [[35.70036244045329, 139.4799088233402], [35.70032362990773, 139.48067348774336], [35.70009076623765, 139.48073083757362], [35.70001314486316, 139.4797941236797]];
+        var eki = L.polygon(arealatlons, { color: 'blue', weight: 2, fill: true, fillColor: 'blue', opacity: 0.5 });
+
         //各ベクタレイヤをオブジェクトに設定
         var overlay = {
-            "公民館": kominkan
+            "公民館": kominkan,
+            "国分寺駅": eki
         }
 
         //layersコントロールのオーバーレイに設定
